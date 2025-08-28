@@ -23,7 +23,7 @@ export const describeImage = async (base64ImageData: string, mimeType: string): 
             model: 'gemini-2.5-flash',
             contents: {
                 parts: [
-                    { text: 'Describe esta imagen de producto en detalle para un prompt de generación de imágenes. Céntrate en los elementos visuales clave, el estilo, el color y lo que representa, para que otro modelo de IA pueda recrear la esencia de lo que se muestra en la pantalla de un smartphone.' },
+                    { text: 'Describe esta imagen de producto en detalle para un prompt de generación de imágenes. Céntrate en los elementos visuales clave, el estilo, el color y lo que representa, para que otro modelo de IA pueda recrear el producto en las manos de una persona.' },
                     { inlineData: { mimeType, data: base64ImageData } }
                 ]
             }

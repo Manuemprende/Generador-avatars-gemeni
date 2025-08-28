@@ -60,21 +60,20 @@ export const generateDynamicPrompt = ({
 - Iluminación: Luz suave y profesional tipo estudio, que evite sombras duras.
 - Fondo: Ligeramente desenfocado (bokeh) para centrar la atención en el personaje y el producto.
 
-**Producto en el Smartphone:**
-- Dispositivo: Smartphone moderno (negro o gris oscuro) con pantalla vibrante.
-- Descripción del producto a mostrar: La pantalla del teléfono debe mostrar de forma clara y dominante una interfaz o resultado relacionado con el siguiente producto: "${productDescription}". En todas las ${numberOfImages} imágenes, la pantalla debe ser el elemento central.
+**Producto a Promocionar:**
+- Descripción del producto: El influencer sostiene y presenta de forma atractiva el siguiente producto: "${productDescription}". El producto debe ser el foco de atención, integrado de manera natural en las manos del influencer. Debe ser claramente visible en todas las imágenes.
 
 **Descripción de las ${numberOfImages} Imágenes (Variaciones Sugeridas):**
 
-1.  **Plano Medio (Presentación de Producto):** ${pronoun.article} ${profession} mirando directamente a la cámara, sonriendo. Sostiene el smartphone a la altura del pecho, mostrando claramente la pantalla con el producto. ${pronoun.possessive} otra mano hace un gesto de invitación hacia la pantalla.
+1.  **Plano Medio (Presentación de Producto):** ${pronoun.article} ${profession} mirando directamente a la cámara, sonriendo. Sostiene el producto a la altura del pecho, mostrándolo claramente. ${pronoun.possessive} otra mano hace un gesto de invitación hacia el producto.
 
-2.  **Plano Cercano (Interacción):** Enfocado en las manos interactuando con la pantalla táctil del teléfono. La pantalla muestra explícitamente la funcionalidad clave del producto. El rostro es visible pero secundario en el fondo.
+2.  **Plano Cercano (Interacción):** Enfocado en las manos interactuando con el producto. El producto se muestra en detalle, destacando sus características clave. El rostro del influencer es visible pero secundario en el fondo.
 
-3.  **Plano Americano (Contexto y Confianza):** ${pronoun.article} ${profession} de pie o sentado, con el cuerpo ligeramente girado pero haciendo contacto visual con la cámara. Sostiene el teléfono mostrando el producto.
+3.  **Plano Americano (Contexto y Confianza):** ${pronoun.article} ${profession} de pie o sentado, con el cuerpo ligeramente girado pero haciendo contacto visual con la cámara. Sostiene el producto de forma visible y profesional.
 
-4.  **Toma Dinámica (Uso en Movimiento):** ${pronoun.article} ${profession} caminando por su lugar de trabajo, revisando la app/producto. La pose sugiere que el producto es útil en el día a día. La pantalla muestra diferentes facetas o resultados del producto.
+4.  **Toma Dinámica (Uso en Movimiento):** ${pronoun.article} ${profession} caminando por su lugar de trabajo, usando o mostrando el producto. La pose sugiere que el producto es útil en el día a día y se integra perfectamente en su entorno profesional.
 
-5.  **Plano General (Potencial Creativo):** ${pronoun.article} ${profession} en su escritorio o área de trabajo, interactuando con el producto. Se ve más del entorno. La pantalla del smartphone muestra claramente el producto, transmitiendo su versatilidad y poder.
+5.  **Plano General (Potencial Creativo):** ${pronoun.article} ${profession} en su escritorio o área de trabajo, con el producto integrado en su rutina. Se ve más del entorno. El producto se muestra claramente, transmitiendo su versatilidad y poder.
 
 (Nota: Si se solicitan menos de 5 imágenes, utiliza las primeras descripciones de la lista.)`;
 };
