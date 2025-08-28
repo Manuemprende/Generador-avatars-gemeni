@@ -148,7 +148,7 @@ const App: React.FC = () => {
               <button
                 onClick={handleGenerateClick}
                 disabled={isLoading}
-                className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-900 disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+                className={`w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-900 disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg ${isLoading ? 'animate-pulse' : ''}`}
               >
                 {isLoading ? 'Generando...' : `Generar`}
               </button>

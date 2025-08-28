@@ -6,6 +6,8 @@ if (!process.env.API_KEY) {
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 
 /**
  * Describes a product image using Gemini to generate a text description.
@@ -89,6 +91,13 @@ export const generateInfluencerImages = async (
       const generated = response.generatedImages || [];
       allImages.push(...generated);
       remainingImages -= imagesInThisCall;
+
+      // If there are more images to generate, wait a bit before the next call.
+      // This helps to avoid hitting API rate limits.
+      if (remainingImages > 0 && !isCancelledRef.current) {
+        console.log('Esperando antes de la siguiente llamada para evitar exceder los límites de la API.');
+        await delay(1500); // Wait 1.5 seconds.
+      }
     }
     
     if (isCancelledRef.current) {
