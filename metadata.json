@@ -1,0 +1,5 @@
+{
+  "name": "Generador de Imágenes de Influencer Virtual",
+  "description": "Una aplicación para generar una serie de imágenes profesionales de un influencer virtual, personalizando su profesión, edad y producto a promocionar.",
+  "requestFramePermissions": []
+}
